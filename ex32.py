@@ -1,13 +1,21 @@
-print("What is your name?")
-name = input()
+def main():
 
-print("How old are you?",)
+    print("What is your name?")
+    name = input()
 
-age = float(input())
+    print("How old are you?")
 
-if age > 35:
-    print("Time for a tombstone!")
-else:
-    print("Have a nice life!")
+    age = float(input())
 
-print("Hello, your name is %s, and you're %d years old." % (name, age))
+    if age > 35:
+        print("Time for a tombstone!")
+    else:
+        print("Have a nice life!")
+
+        print("Hello, your name is %s, and you're %d years old." % (name, age))
+
+play = 'yes'
+while play != "no":
+    main()
+    print("Do you want to play again?")
+    play = input()
