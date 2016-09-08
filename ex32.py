@@ -9,6 +9,7 @@ def main():
 
     if age > 35:
         print("Time for a tombstone!")
+        print("Hello, your name is %s, and you're %d years old." % (name, age))
     else:
         print("Have a nice life!")
 
